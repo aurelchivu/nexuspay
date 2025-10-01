@@ -64,14 +64,4 @@ public class WebhookEvent {
                 .attempts(0)
                 .build();
     }
-
-    public String compactJson() {
-        // only publish essentials
-        return String.format(
-                "{\"tenantId\":\"%s\",\"eventId\":\"%s\",\"createdAt\":\"%s\"}",
-                tenantId, eventId, createdAt
-        );
-    }
 }
-
-
